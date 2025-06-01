@@ -1,7 +1,13 @@
 import { ReactNode } from "react";
+import { Toaster } from "sonner";
 
 const AuthLayout = ({ children }: { children: ReactNode }) => {
-  return <div>{children}</div>;
+  return (
+    <div className="auth-layout">
+      {children}
+      <Toaster position="bottom-right" />
+    </div>
+  );
 };
 
 export default AuthLayout;
